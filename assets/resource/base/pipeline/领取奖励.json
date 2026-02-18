@@ -1,11 +1,11 @@
 {
     "Awards": {
         "next": [
-            "子任务_点击取消",
-            "子任务_关闭公告",
+            "[JumpBack]子任务_点击取消",
+            "[JumpBack]子任务_关闭公告",
             "Mail",
             "NoMail",
-            "子任务_进入首页"
+            "[JumpBack]子任务_进入首页"
         ]
     },
     "Mail": {
@@ -51,7 +51,7 @@
             "DailyTask",
             "NoDailyTask",
             "Mail_Receive",
-            "子任务_进入首页"
+            "[JumpBack]子任务_进入首页"
         ]
     },
     "NoMail": {
@@ -133,7 +133,7 @@
         "count": 7,
         "action": "Click",
         "next": [
-            "子任务_获得物品",
+            "[JumpBack]子任务_获得物品",
             "DailyTask_Receive1",
             "DailyTask_Receive2"
         ]
@@ -163,7 +163,7 @@
             "DailyTask_Receive3",
             "BattlePass",
             "NoBattlePass",
-            "子任务_进入首页"
+            "[JumpBack]子任务_进入首页"
         ]
     },
     "DailyTask_Receive3": {
@@ -188,11 +188,11 @@
         "count": 7,
         "action": "Click",
         "next": [
-            "子任务_获得物品",
+            "[JumpBack]子任务_获得物品",
             "BattlePass",
             "NoBattlePass",
             "DailyTask_Receive3",
-            "子任务_进入首页"
+            "[JumpBack]子任务_进入首页"
         ]
     },
     "NoDailyTask": {
@@ -207,7 +207,7 @@
         "next": [
             "BattlePass",
             "NoBattlePass",
-            "子任务_进入首页"
+            "[JumpBack]子任务_进入首页"
         ]
     },
     "BattlePass": {
@@ -266,7 +266,7 @@
         "action": "Click",
         "post_delay": 1000,
         "next": [
-            "子任务_获得物品",
+            "[JumpBack]子任务_获得物品",
             "BattlePass_ReceiveWeeklyMission",
             "BattlePass_ReceiveDailyMissionGet"
         ]
@@ -294,7 +294,7 @@
         "action": "Click",
         "post_delay": 2000,
         "next": [
-            "子任务_获得物品",
+            "[JumpBack]子任务_获得物品",
             "BattlePass_ReceiveWeeklyMissionGet",
             "BattlePass_ReceiveMonthlyMission",
             "BattlePass_ReceiveWeeklyMission"
@@ -322,7 +322,7 @@
         "count": 7,
         "action": "Click",
         "next": [
-            "子任务_获得物品",
+            "[JumpBack]子任务_获得物品",
             "BattlePass_ReceiveMonthlyMission",
             "BattlePass_ReceiveWeeklyMissionGet"
         ]
@@ -350,7 +350,7 @@
         "action": "Click",
         "post_delay": 2000,
         "next": [
-            "子任务_获得物品",
+            "[JumpBack]子任务_获得物品",
             "BattlePass_ReceiveMonthlyMissionGet",
             "BattlePass_MissionExist",
             "BattlePass_ReceiveMonthlyMission"
@@ -378,7 +378,7 @@
         "count": 7,
         "action": "Click",
         "next": [
-            "子任务_获得物品",
+            "[JumpBack]子任务_获得物品",
             "BattlePass_MissionExist",
             "BattlePass_ReceiveMonthlyMissionGet"
         ]

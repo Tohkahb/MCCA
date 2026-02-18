@@ -1,9 +1,9 @@
 {
     "Time-limited Shopping": {
         "next": [
-            "子任务_关闭公告",
+            "[JumpBack]子任务_关闭公告",
             "Shop1",
-            "子任务_进入首页"
+            "[JumpBack]子任务_进入首页"
         ]
     },
     "Shop1": {
@@ -64,7 +64,7 @@
         "action": "Click",
         "post_delay": 1000,
         "next": [
-            "子任务_获得物品",
+            "[JumpBack]子任务_获得物品",
             "Buy_something",
             "Buyit",
             "进入首页"

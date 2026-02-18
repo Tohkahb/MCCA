@@ -22,10 +22,8 @@
         "enabled": true,
         "next": [
             "检查体力-红",
-            "检查体力-白"
-        ],
-        "interrupt": [
-            "重连网络"
+            "检查体力-白",
+            "[JumpBack]重连网络"
         ]
     },
     "增加次数": {
@@ -283,14 +281,8 @@
         "focus": true
     },
     "开启加成": {
-        "recognition": "OCR",
-        "expected": "开启",
-        "roi": [
-            761,
-            416,
-            83,
-            66
-        ],
+        "recognition": "TemplateMatch",
+        "template": "开启扫荡加成.png",
         "action": "Click",
         "pre_wait_freezes": {
             "time": 1000,
@@ -315,13 +307,12 @@
         },
         "action": "Click",
         "next": [
-            "扫荡升级",
+            "[JumpBack]扫荡升级",
             "扫荡成功-检查",
             "扫荡结束"
         ]
     },
     "扫荡升级": {
-        "is_sub": true,
         "recognition": "TemplateMatch",
         "template": "Combat/DailyExplore_LevelUp.png",
         "roi": [

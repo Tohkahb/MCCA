@@ -2,7 +2,7 @@
     "DailyExplore": {
         "next": [
             "首页_出击",
-            "子任务_进入首页"
+            "[JumpBack]子任务_进入首页"
         ]
     },
     "DailyExplore_Entry": {
@@ -150,7 +150,7 @@
         "action": "Click",
         "post_delay": 2000,
         "next": [
-            "DailyExplore_MopUpDoubleMarkup",
+            "[JumpBack]DailyExplore_MopUpDoubleMarkup",
             "DailyExplore_MopUpAwards",
             "DailyExplore_NoFuel",
             "DailyExplore_MopUpStart"
@@ -193,13 +193,12 @@
         "action": "Click",
         "post_delay": 2000,
         "next": [
-            "DailyExplore_LevelUp",
+            "[JumpBack]DailyExplore_LevelUp",
             "DailyExplore_MopUp",
             "DailyExplore_MopUpAwards"
         ]
     },
     "DailyExplore_LevelUp": {
-        "is_sub": true,
         "recognition": "TemplateMatch",
         "template": "Combat/DailyExplore_LevelUp.png",
         "roi": [
@@ -211,7 +210,6 @@
         "action": "Click"
     },
     "DailyExplore_MopUpDoubleMarkup": {
-        "is_sub": true,
         "recognition": "OCR",
         "expected": [
             "开启"

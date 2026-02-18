@@ -1,6 +1,5 @@
 {
   "战斗_自动战斗": {
-    "is_sub": true,
     "recognition": "TemplateMatch",
     "template": "Combat/Combat_Auto.png",
     "roi": [
@@ -12,7 +11,6 @@
     "action": "Click"
   },
   "战斗_启用二倍速": {
-    "is_sub": true,
     "recognition": "TemplateMatch",
     "template": "Combat/Combat_Doublespeed.png",
     "roi": [
@@ -43,15 +41,14 @@
     "next_doc": "Set in code."
   },
   "子任务_进入首页": {
-    "is_sub": true,
     "next": [
       "首页标志2",
-      "子任务_点击首页按钮",
-      "子任务_点击返回",
-      "子任务_获得物品",
-      "子任务_点击取消",
-      "子任务_点击确认",
-      "子任务_关闭公告",
+      "[JumpBack]子任务_点击首页按钮",
+      "[JumpBack]子任务_点击返回",
+      "[JumpBack]子任务_获得物品",
+      "[JumpBack]子任务_点击取消",
+      "[JumpBack]子任务_点击确认",
+      "[JumpBack]子任务_关闭公告",
       "签到",
       "首页标志1",
       "开始游戏",
@@ -59,7 +56,6 @@
     ]
   },
   "子任务_点击确认": {
-    "is_sub": true,
     "recognition": "OCR",
     "expected": [
       "确认"
@@ -73,7 +69,6 @@
     "action": "Click"
   },
   "子任务_点击取消": {
-    "is_sub": true,
     "recognition": "OCR",
     "expected": [
       "取消"
@@ -87,7 +82,6 @@
     "action": "Click"
   },
   "子任务_获得物品": {
-    "is_sub": true,
     "recognition": "OCR",
     "expected": [
       "获得物品",
@@ -103,7 +97,6 @@
     "post_delay": 1000
   },
   "子任务_点击返回": {
-    "is_sub": true,
     "recognition": "TemplateMatch",
     "template": "StartUp/BackButton.png",
     "roi": [
@@ -115,7 +108,6 @@
     "action": "Click"
   },
   "子任务_点击首页按钮": {
-    "is_sub": true,
     "recognition": "TemplateMatch",
     "template": [
       "StartUp/HomeButton.png",
@@ -131,7 +123,6 @@
     "post_delay": 5000
   },
   "子任务_关闭公告": {
-    "is_sub": true,
     "recognition": "TemplateMatch",
     "template": "StartUp/CloseAnnouncement.png",
     "roi": [
@@ -143,7 +134,6 @@
     "action": "Click"
   },
   "子任务_关闭周年公告": {
-    "is_sub": true,
     "recognition": "TemplateMatch",
     "template": "StartUp/ZNGG.png",
     "roi": [
@@ -215,7 +205,7 @@
     ],
     "action": "Click",
     "post_wait_freezes": 200,
-    "next": "进入活动探索界面"
+    "next": ["进入活动探索界面"]
   },
   "进入活动探索界面": {
     "recognition": "OCR",
@@ -231,8 +221,10 @@
       "time": 1000,
       "threshold": 0.95
     },
-    "next": "活动选择",
-    "interrupt": "活动探索-右滑"
+    "next": [
+      "活动选择",
+      "[JumpBack]活动探索-右滑"
+    ]
   },
   "活动选择": {
     "recognition": "OCR",
@@ -270,7 +262,6 @@
     }
   },
   "跳过boss演出动画": {
-    "is_sub": true,
     "recognition": "OCR",
     "expected": "跳过",
     "roi": [

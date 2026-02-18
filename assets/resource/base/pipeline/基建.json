@@ -3,14 +3,14 @@
         "next": [
             "Base",
             "Infr_收取资源",
-            "子任务_进入首页"
+            "[JumpBack]子任务_进入首页"
         ]
     },
     "Infrastructures_Deal": {
         "next": [
             "Base_Deal",
             "Infr_DealDefaltYes",
-            "子任务_进入首页"
+            "[JumpBack]子任务_进入首页"
         ]
     },
     "Base_Deal": {
@@ -61,7 +61,7 @@
         "action": "Click",
         "post_delay": 2000,
         "next": [
-            "子任务_获得物品",
+            "[JumpBack]子任务_获得物品",
             "Infr_驻员状况"
         ]
     },
@@ -77,7 +77,7 @@
         "action": "Click",
         "post_delay": 2000,
         "next": [
-            "子任务_获得物品",
+            "[JumpBack]子任务_获得物品",
             "Infr_收取资源_不换班",
             "Infr_DealDefaltYes"
         ]
@@ -116,7 +116,7 @@
         "action": "Click",
         "post_delay": 2000,
         "next": [
-            "Infr_使用",
+            "[JumpBack]Infr_使用",
             "Infr_驻员预设2"
         ]
     },
@@ -135,7 +135,7 @@
         "action": "Click",
         "post_delay": 2000,
         "next": [
-            "Infr_使用",
+            "[JumpBack]Infr_使用",
             "Infr_驻员预设3"
         ]
     },
@@ -154,7 +154,7 @@
         "action": "Click",
         "post_delay": 2000,
         "next": [
-            "Infr_使用",
+            "[JumpBack]Infr_使用",
             "Infr_驻员预设4"
         ]
     },
@@ -173,7 +173,7 @@
         "action": "Click",
         "post_delay": 2000,
         "next": [
-            "Infr_使用",
+            "[JumpBack]Infr_使用",
             "Infr_BackButton"
         ]
     },
@@ -195,7 +195,6 @@
         ]
     },
     "Infr_使用": {
-        "is_sub": true,
         "recognition": "OCR",
         "expected": [
             "使用"
@@ -242,8 +241,8 @@
         "post_delay": 2000,
         "next": [
             "Infr_Occupancy",
-            "子任务_获得物品",
-            "子任务_点击返回"
+            "[JumpBack]子任务_获得物品",
+            "[JumpBack]子任务_点击返回"
         ]
     },
     "Infr_Occupancy": {
@@ -369,12 +368,11 @@
         ],
         "next": [
             "Infr_Substitute2",
-            "Infr_SubstituteComfirm",
-            "子任务_点击返回"
+            "[JumpBack]Infr_SubstituteComfirm",
+            "[JumpBack]子任务_点击返回"
         ]
     },
     "Infr_SubstituteComfirm": {
-        "is_sub": true,
         "recognition": "OCR",
         "expected": [
             "确定"
@@ -483,8 +481,8 @@
         ],
         "next": [
             "Infr_Substitute3",
-            "Infr_SubstituteComfirm",
-            "子任务_点击返回"
+            "[JumpBack]Infr_SubstituteComfirm",
+            "[JumpBack]子任务_点击返回"
         ]
     },
     "Infr_Substitute3": {
@@ -661,10 +659,10 @@
             50
         ],
         "next": [
-            "Infr_SubstituteComfirm",
+            "[JumpBack]Infr_SubstituteComfirm",
             "Infr_Deal",
             "Infr_Exit",
-            "子任务_点击返回"
+            "[JumpBack]子任务_点击返回"
         ]
     },
     "Infr_Exit": {
@@ -724,9 +722,9 @@
             "threshold": 0.95
         },
         "next": [
-            "Infr_DealSelf1",
-            "Infr_DealSelf2",
-            "Infr_DealSelf3",
+            "[JumpBack]Infr_DealSelf1",
+            "[JumpBack]Infr_DealSelf2",
+            "[JumpBack]Infr_DealSelf3",
             "Infr_DealNextFriends",
             "通用-返回主页"
         ]
@@ -738,15 +736,14 @@
         },
         "next": [
             "Infr_DealNextFriends_End",
-            "Infr_DealSelf1",
-            "Infr_DealSelf2",
-            "Infr_DealSelf3",
-            "Infr_DealNextFriends_VisitNext"
+            "[JumpBack]Infr_DealSelf1",
+            "[JumpBack]Infr_DealSelf2",
+            "[JumpBack]Infr_DealSelf3",
+            "[JumpBack]Infr_DealNextFriends_VisitNext"
         ],
-        "on_error": "通用-返回主页"
+        "on_error": ["通用-返回主页"]
     },
     "Infr_DealSelf1": {
-        "is_sub": true,
         "recognition": "TemplateMatch",
         "template": [
             "InfrastructureS/构建订单3.png",
@@ -772,12 +769,11 @@
         "next": [
             "Infr_DealSelf_Yes",
             "Infr_DealSelf_No",
-            "子任务_获得物品",
+            "[JumpBack]子任务_获得物品",
             "Infr_1号物品售罄"
         ]
     },
     "Infr_DealSelf2": {
-        "is_sub": true,
         "recognition": "TemplateMatch",
         "template": "InfrastructureS/星币120000.png",
         "threshold": 0.95,
@@ -799,12 +795,11 @@
         "next": [
             "Infr_DealSelf_Yes",
             "Infr_DealSelf_No",
-            "子任务_获得物品",
+            "[JumpBack]子任务_获得物品",
             "Infr_2号物品售罄"
         ]
     },
     "Infr_DealSelf3": {
-        "is_sub": true,
         "recognition": "TemplateMatch",
         "template": "InfrastructureS/经验120000.png",
         "threshold": 0.95,
@@ -826,7 +821,7 @@
         "next": [
             "Infr_DealSelf_Yes",
             "Infr_DealSelf_No",
-            "子任务_获得物品",
+            "[JumpBack]子任务_获得物品",
             "Infr_3号物品售罄"
         ]
     },
@@ -968,7 +963,6 @@
         ]
     },
     "Infr_DealNextFriends_VisitNext": {
-        "is_sub": true,
         "recognition": "TemplateMatch",
         "template": "向右箭头.png",
         "roi": [
@@ -1140,7 +1134,7 @@
             39
         ],
         "next": [
-            "子任务_获得物品",
+            "[JumpBack]子任务_获得物品",
             "Infr_制作素材_合成_返回"
         ]
     },
@@ -1164,7 +1158,7 @@
         ],
         "post_delay": 1000,
         "next": [
-            "子任务_获得物品",
+            "[JumpBack]子任务_获得物品",
             "Infr_制作素材_返回",
             "Infr_换取页面",
             "Infr_制作素材_合成_返回"
