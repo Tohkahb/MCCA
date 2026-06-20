@@ -28,7 +28,7 @@
         "expected": [
             "限时贸易所"
         ],
-      "roi" : [513,59,231,99],
+      "roi" : [759, 95, 106, 33],
         "action": "Click",
         "post_delay": 2000,
         "next": [

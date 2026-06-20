@@ -284,7 +284,7 @@
     },
     "开启加成": {
         "recognition": "OCR",
-        "expected": "开启",
+        "expected": "使用",
         "roi": [
             761,
             416,

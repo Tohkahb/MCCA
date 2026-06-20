@@ -189,7 +189,7 @@
                             "next": "DailyExplore_ReAc_Token"
                         },
                         "DailyExplore_LevelSelect": {
-                            "expected": "第4层"
+                            "expected": "第5层"
                         }
                     }
                 },
@@ -462,7 +462,7 @@
                     }
                 },
                 {
-                    "name": "荒墟拾遗（1-4层）",
+                    "name": "荒墟拾遗（1-5层）",
                     "pipeline_override": {
                         "出击-选择": {
                             "expected": "每日探索",
@@ -483,7 +483,7 @@
                             ]
                         },
                         "每日探索-第n层": {
-                            "expected": "第4层"
+                            "expected": "第5层"
                         }
                     }
                 },
